@@ -73,14 +73,13 @@ void CorrectV() { //Корректировка поворота
 
 void setup() {
   myServo10.attach(10);
-  myServo10.write(Langle,10, true);
+  myServo10.write(Langle, 10, true);
   //Serial.begin(9600);
   pinMode(2, OUTPUT);
   pinMode(3, OUTPUT);
   pinMode(13, OUTPUT);
   digitalWrite(2, 0);
   digitalWrite(3, 0);
-  myServo10.attach(10);
   power.hardwareDisable(PWR_I2C | PWR_SPI);
   power.setSleepMode(EXTSTANDBY_SLEEP);
 
